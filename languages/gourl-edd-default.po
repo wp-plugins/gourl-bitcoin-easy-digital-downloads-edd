@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GoUrl Easy Digital Downloads (EDD) - Bitcoin Altcoin "
 "Payment Gateway Addon\n"
-"POT-Creation-Date: 2015-08-04 11:29-0000\n"
-"PO-Revision-Date: 2015-08-04 11:29-0000\n"
+"POT-Creation-Date: 2015-08-05 14:01-0000\n"
+"PO-Revision-Date: 2015-08-05 14:01-0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -57,7 +57,7 @@ msgstr ""
 #, php-format
 msgid ""
 "Your GoUrl Bitcoin Gateway <a href='%s'>Main Plugin</a> version is too old. "
-"Requires 1.3.3 or higher version. Please <a href='%s'>update</a> to latest "
+"Requires 1.3.4 or higher version. Please <a href='%s'>update</a> to latest "
 "version."
 msgstr ""
 
@@ -146,7 +146,7 @@ msgid ""
 "calculating from a fiat currency (e.g. USD, EUR, etc) to cryptocurrency. <br/"
 "> Example: <b>1.05</b> - will add an extra 5% to the total price in bitcoin/"
 "altcoins, <b>0.85</b> - will be a 15% discount for the price in bitcoin/"
-"altcoins. Default: 1.00 "
+"altcoins. Default: 1.00"
 msgstr ""
 
 #: gourl-edd.php:258
@@ -330,7 +330,7 @@ msgid ""
 ">Awaiting network confirmation..."
 msgstr ""
 
-#: gourl-edd.php:638
+#: gourl-edd.php:631
 #, php-format
 msgid "%s Payment ID: <a href='%s'>%s</a> - <b>Confirmed</b>"
 msgstr ""

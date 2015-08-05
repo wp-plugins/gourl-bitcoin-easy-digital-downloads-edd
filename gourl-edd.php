@@ -115,9 +115,9 @@ if (!function_exists('gourl_edd_gateway_load') && !function_exists('gourl_edd_ac
 
 			if (class_exists('gourlclass') && defined('GOURL') && defined('GOURL_ADMIN') && is_object($gourl))
 			{ 
-				if (true === version_compare(GOURL_VERSION, '1.3.3', '<'))
+				if (true === version_compare(GOURL_VERSION, '1.3.4', '<'))
 				{
-					$this->method_description .= '<div class="error"><p><b>' .sprintf(__( "Your GoUrl Bitcoin Gateway <a href='%s'>Main Plugin</a> version is too old. Requires 1.3.3 or higher version. Please <a href='%s'>update</a> to latest version.", GOURLEDD ), GOURL_ADMIN.GOURL, $this->mainplugin_url)."</b> &#160; &#160; &#160; &#160; " . 
+					$this->method_description .= '<div class="error"><p><b>' .sprintf(__( "Your GoUrl Bitcoin Gateway <a href='%s'>Main Plugin</a> version is too old. Requires 1.3.4 or higher version. Please <a href='%s'>update</a> to latest version.", GOURLEDD ), GOURL_ADMIN.GOURL, $this->mainplugin_url)."</b> &#160; &#160; &#160; &#160; " . 
 							  __( 'Information', GOURLEDD ) . ": &#160; <a href='https://gourl.io/bitcoin-wordpress-plugin.html'>".__( 'Main Plugin Homepage', GOURLEDD )."</a> &#160; &#160; &#160; " . 
 							  "<a href='https://wordpress.org/plugins/gourl-bitcoin-payment-gateway-paid-downloads-membership/'>".__( 'WordPress.org Plugin Page', GOURLEDD )."</a></p></div>";
 				}
@@ -488,7 +488,7 @@ if (!function_exists('gourl_edd_gateway_load') && !function_exists('gourl_edd_ac
 				echo '<h3>' . __( 'Information', GOURLEDD ) . '</h3>' . PHP_EOL;
 				echo "<div class='edd-alert edd-alert-error'>".sprintf(__( "Please try a different payment method. Admin need to install and activate wordpress plugin <a href='%s'>GoUrl Bitcoin Gateway for Wordpress</a> to accept Bitcoin/Altcoin Payments online.", GOURLEDD), "https://gourl.io/bitcoin-wordpress-plugin.html")."</div>";
 			}
-			elseif (!$this->payments || !$this->defcoin || true === version_compare(EDD_VERSION, '2.4.2', '<') || true === version_compare(GOURL_VERSION, '1.3.3', '<') || 
+			elseif (!$this->payments || !$this->defcoin || true === version_compare(EDD_VERSION, '2.4.2', '<') || true === version_compare(GOURL_VERSION, '1.3.4', '<') || 
 					(array_key_exists($currency, $this->coin_names) && !array_key_exists($currency, $this->payments)))
 			{
 				echo '<h3>' . __( 'Information', GOURLEDD ) . '</h3>' . PHP_EOL;
